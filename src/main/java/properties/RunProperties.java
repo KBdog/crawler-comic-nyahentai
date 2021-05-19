@@ -3,7 +3,6 @@ package properties;
 import entity.Comic;
 import okhttp3.OkHttpClient;
 import parser.NyaHentaiParser;
-import us.codecraft.webmagic.Spider;
 
 import java.net.InetSocketAddress;
 import java.net.Proxy;
