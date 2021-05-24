@@ -31,7 +31,13 @@ public class Starter {
         System.out.println("存放目录:"+RunProperties.crawlerDirectory);
         System.out.println("---------------------------------------");
         System.out.print("请输入漫画关键字进行搜索:");
-        String keyword=in.nextLine();
+        String keyword=in.nextLine()
+                .replaceAll("/"," ")
+                .replaceAll("\"","")
+                .replaceAll("\\(","")
+                .replaceAll("\\)","")
+                .replaceAll("\\[","")
+                .replaceAll("\\]","");
         List<Comic> comicList=null;
         if(keyword!=null&&!keyword.equals("")){
             System.out.println("关键字:"+keyword);
@@ -94,7 +100,8 @@ public class Starter {
                             String comicName=RunProperties.comic.getComicName()
                                     .replaceAll("\\?","？")
                                     .replaceAll("/"," ")
-                                    .replaceAll("\\|"," ");
+                                    .replaceAll("\\|"," ")
+                                    .replaceAll("\"","");
                             //页码
                             String picPage=result.split("___")[1];
                             //缝合
