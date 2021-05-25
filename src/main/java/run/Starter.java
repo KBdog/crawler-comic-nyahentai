@@ -33,11 +33,11 @@ public class Starter {
         System.out.print("请输入漫画关键字进行搜索:");
         String keyword=in.nextLine()
                 .replaceAll("/"," ")
-                .replaceAll("\"","")
-                .replaceAll("\\(","")
-                .replaceAll("\\)","")
-                .replaceAll("\\[","")
-                .replaceAll("\\]","")
+                .replaceAll("\""," ")
+                .replaceAll("\\("," ")
+                .replaceAll("\\)"," ")
+                .replaceAll("\\["," ")
+                .replaceAll("\\]"," ")
                 .replaceAll("\\,"," ")
                 .replaceAll("\\'"," ")
                 .replaceAll("\\@"," ");
