@@ -40,7 +40,8 @@ public class Starter {
                 .replaceAll("\\]"," ")
                 .replaceAll("\\,"," ")
                 .replaceAll("\\'"," ")
-                .replaceAll("\\@"," ");
+                .replaceAll("\\@"," ")
+                .replaceAll("\\!","！");
         List<Comic> comicList=null;
         if(keyword!=null&&!keyword.equals("")){
             System.out.println("关键字:"+keyword);
