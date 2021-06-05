@@ -10,7 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 public class RunProperties {
     //nyahentai域名
-    public static String host="https://nyahentai.com";
+//    public static String host="https://nyahentai.com";
+    //nayhentai中文站域名
+    public static String host="https://zha.qqhentai.com/";
     //存储目录
     public static String crawlerDirectory="D:/Comic/nyahentai/";
     //代理
